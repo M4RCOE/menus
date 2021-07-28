@@ -40,46 +40,51 @@
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Menus</h3>
+               <center> <h3>Menus</h3></center>
             </div>
 
-            <ul class="list-unstyled components  ">
-
+            <ul class="list-unstyled components ">
                 <li>
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle active">Crear Menu</a>
+                    <ul class="collapse list-unstyled  " id="pageSubmenu">
                         <br>
                         <div class='ml-3'>
-                            <input type="text" class='rounded border-0' placeholder="URL" id='url'
+                            <input type="text" class='rounded border-0 mb-2' placeholder="Nombre Menu" id='nmenu'
                                 style="width: 200px;; height:40px; text-align: center;"><br>
+                            <input type="text" class='rounded border-0' placeholder="Usurario" id='nuser'
+                                style="width: 200px;; height:40px; text-align: center;"> 
+                         </div>    
+                        <center>
+                            <input type="button" onclick='agrega_menu()' class='rounded border-0 mt-3 mr-4' value='+'
+                                style="width:80px; height:40px; text-align: center;">
+                        </center>
+                        <br>
+                       
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle ">Url Personalizado</a>
+                    <ul class="collapse list-unstyled " id="homeSubmenu">
+                        <br>
+                        <div class='ml-3'>
+                            <input type="text" class='rounded border-0 mb-2' placeholder="URL" id='url'
+                                style="width: 200px;; height:40px; text-align: center;"> 
                             <input type="text" class='rounded border-0 mt-3' placeholder="Texto de Enlace" id='textoUrl'
                                 style="width:200px; height:40px; text-align: center;">
 
                         </div>
                         <center>
-                            <input type="button" onclick='agrega()' class='rounded border-0 mt-3' value='+'
+                            <input type="button" onclick='agrega()' class='rounded border-0 mt-3 mr-4' value='+'
                                 style="width:80px; height:40px; text-align: center;">
                         </center>
                         <br>
                     </ul>
                 </li>
 
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
-                        class="dropdown-toggle">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-
+               
             </ul>
 
         </nav>
@@ -102,18 +107,8 @@
             <center><span id='menuS'></span></center>
             <div class='cc'>
                 <ol id='contenedor' class="sortable">
-                    <li>
-                        <div>Menu1 </div>
-                    </li>
-                    <li>
-                        <div>Menu2 </div>
-                    </li>
-                    <li>
-                        <div>Menu3 </div>
-                    </li>
-                    <li>
-                        <div>Menu4 </div>
-                    </li>
+                     <li><div>Menu</div></li>
+                    
 
                 </ol>
             </div>
@@ -221,7 +216,7 @@
 
 
     </script>
-    </script>
+     
 
 </body>
 
